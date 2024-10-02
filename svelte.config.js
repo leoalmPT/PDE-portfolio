@@ -2,7 +2,7 @@
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const base = '/';
+const base = '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
