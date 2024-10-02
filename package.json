@@ -47,6 +47,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^4.7.2",
 		"dayjs": "^1.11.10"
 	}
 }
