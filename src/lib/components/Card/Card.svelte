@@ -13,6 +13,11 @@
 	export let classes: Array<string> = [];
 	export let href: undefined | string = undefined;
 	export let bgImg: string | undefined = undefined;
+	export let url: undefined | string = undefined;
+	export let file: undefined | string = undefined;
+
+	// href = undefined if url or file is defined
+	$: href = url || file ? undefined : href;
 
 	$: computedColor = isHexColor(color) ? color : convertNamedToHexColor(color as NamedColor);
 	$: borderColor = changeColorOpacity(computedColor, 0.5);
@@ -71,6 +76,17 @@
 		' '
 	)}`}
 	style:bgColor={'red'}
+
+	on:click={() => {
+		if (url) {
+			window.open(url, '_blank');
+		} else if (file) {
+			const link = document.createElement('a');
+			link.href = file;
+			link.download = file ? file.split('/').pop() ?? '' : '';
+			link.click();
+		}	
+	}}
 >
 	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px">
 		<slot />

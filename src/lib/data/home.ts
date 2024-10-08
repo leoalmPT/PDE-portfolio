@@ -8,34 +8,22 @@ export const name = 'Leonardo';
 export const lastName = 'Almeida';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
+	'I have always had a passion for learning new things, with a particular interest in computer science and technology. I have a perfectionist mindset, which makes me pay attention to every detail and ensure that my work meets the standards of quality expected. I take my commitments seriously and always strive to deliver projects on time. \n' +
+	'I am a motivated and enthusiastic individual who is eager to contribute with my skills and knowledge in the field of computer science and engineering. I am constantly seeking new challenges and opportunities to expand my expertise, I find genuine enjoyment in what I do, and I look forward to use my abilities to make a meaningful impact in the industry.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{ 
+		platform: Platform.GitHub, 
+		link: 'https://github.com/leoalmPT' 
+	},
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
-	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
+		link: 'https://www.linkedin.com/in/leoalmpt/'
 	},
 	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
+		link: 'leonardoalmeida7777@gmail.com'
 	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
-	}
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+export const skills = undefined;

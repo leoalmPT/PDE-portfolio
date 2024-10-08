@@ -55,7 +55,7 @@
 					display: `${item.name} @ ${item.company}`,
 					name: item.name,
 					type: 'experience',
-					url: `/experience/${item.slug}`
+					url: `/activities/${item.slug}`
 				});
 			}
 		});
@@ -71,10 +71,10 @@
 <TabTitle title={computedTitle} />
 
 <div class="pb-10 overflow-x-hidden col flex-1">
-	{#if data.skill === undefined}
+	{#if data.skill === undefined || data.skill.description === ''}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)]">
 			<UIcon icon="i-carbon-software-resource-cluster" classes="text-3.5em" />
-			<p class="font-300">Could not load skill data.</p>
+			<p class="font-300">Could not load resource data.</p>
 		</div>
 	{:else}
 		<div class="flex flex-col items-center overflow-x-hidden">

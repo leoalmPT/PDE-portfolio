@@ -50,6 +50,8 @@ export interface SkillCategory<S extends string = string> {
 export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDescription'> {
 	color: string;
 	category?: SkillCategory;
+	url?: string;
+	file?: string;
 }
 
 export interface Project<S extends string = string> extends Item<S> {

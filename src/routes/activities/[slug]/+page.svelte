@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { getAssetURL } from '$lib/data/assets';
-	import { title } from '@data/experience';
+	import { title } from '$lib/data/experience';
 	import { getTimeDiff } from '$lib/utils';
 
 	import type { Experience } from '$lib/types';

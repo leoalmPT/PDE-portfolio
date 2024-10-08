@@ -36,9 +36,11 @@
 							<Card
 								classes={['cursor-pointer decoration-none']}
 								tiltDegree={1}
-								href={`${base}/skills/${skill.slug}`}
+								href={`${base}/resources/${skill.slug}`}
 								bgImg={getAssetURL(skill.logo)}
 								color={skill.color}
+								url={skill.url}
+								file={skill.file}
 							>
 								<p class="text-[var(--tertiary-text)]">{skill.name}</p>
 							</Card>
