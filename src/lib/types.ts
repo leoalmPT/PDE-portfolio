@@ -26,7 +26,7 @@ export type Asset = string | { light: string; dark: string };
 export interface Item<S extends string = string> {
 	slug: S;
 	name: string;
-	logo: Asset;
+	logo?: Asset;
 	shortDescription: string;
 	description: string;
 	screenshots?: Array<{ src: string; label: string }>;
@@ -55,20 +55,21 @@ export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDe
 }
 
 export interface Project<S extends string = string> extends Item<S> {
-	links: Array<Link>;
+	links?: Array<Link>;
 	color: Color;
-	period: {
+	period?: {
 		from: Date;
 		to?: Date;
 	};
-	type: string;
-	skills: Array<Skill<S>>;
+	type?: string;
+	skills?: Array<Skill<S>>;
 }
 
 export interface Experience<S extends string = string> extends Project<S> {
-	company: string;
-	location: string;
-	contract: ContractType;
+	// company: string;
+	// location: string;
+	// contract: ContractType;
+	date: Date;
 }
 
 export interface Education<S extends string = string> extends Item<S> {

@@ -13,23 +13,10 @@
 
 	export let experience: Experience;
 
-	// const months = getTimeDiff(experience.period.from, experience.period.to);
-	const exactDuration = computeExactDuration(experience.period.from, experience.period.to);
+	const date_str = `${experience.date.getDate()} ${getMonthName(
+		experience.date.getMonth()
+	)} ${experience.date.getFullYear()}`;
 
-	const from = `${getMonthName(
-		experience.period.from.getMonth()
-	)} ${experience.period.from.getFullYear()}`;
-	const to = experience.period.to
-		? `${getMonthName(experience.period.to.getMonth())} ${experience.period.to.getFullYear()}`
-		: 'Present';
-
-	const period = `${from} - ${to}`;
-
-	$: info = [
-		{ label: experience.company, icon: 'i-carbon-building' },
-		{ label: experience.location, icon: 'i-carbon-location' },
-		{ label: experience.contract, icon: 'i-carbon-hourglass' }
-	] as const;
 </script>
 
 <Card
@@ -39,7 +26,6 @@
 	color={experience.color}
 >
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
-		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={55} />
 		<div class="col ml-0 md:ml-[20px] gap-3 w-full">
 			<div class="col ">
 				<h3
@@ -47,37 +33,15 @@
 				>
 					<CardTitle title={`${experience.name}`} />
 				</h3>
-				<div class="row flex-wrap items-start m-b-2 gap-1 text-0.9em font-300">
-					{#each info as item}
-						<Chip>
-							<UIcon icon={item.icon} />
-							<span class="m-l-1">{item.label}</span>
-						</Chip>
-					{/each}
-				</div>
 			</div>
 			<div class="text-[var(--text)] text-[0.9em]">
 				<div class="row items-center gap-2">
 					<UIcon icon="i-carbon-calendar" classes="text-1.25em" />
-					{period}
-				</div>
-				<CardDivider />
-				<div class="row items-center gap-2">
-					<UIcon icon="i-carbon-time" classes="text-1.25em" />
-					{exactDuration}
+					{date_str}
 				</div>
 				<CardDivider />
 			</div>
 			<div class="experience-description text-[0.9em]">{experience.shortDescription}</div>
-			<div class="flex flex-row flex-wrap mt-5">
-				{#each experience.skills as skill}
-					<ChipIcon
-						logo={getAssetURL(skill.logo)}
-						name={skill.name}
-						href={`${base}/skills/${skill.slug}`}
-					/>
-				{/each}
-			</div>
 		</div>
 	</div>
 </Card>

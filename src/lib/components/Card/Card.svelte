@@ -3,6 +3,7 @@
 	import { changeColorOpacity, isHexColor } from '@riadh-adrani/utils';
 	import { onMount } from 'svelte';
 	import type { MouseEventHandler } from 'svelte/elements';
+	import UIcon from '../Icon/UIcon.svelte';
 
 	let el: HTMLElement;
 
@@ -32,6 +33,8 @@
 		}
 	}
 
+	$: showIcon = false;
+
 	// svelte typing is broken...
 	const onHover: MouseEventHandler<HTMLDivElement> = (ev) => {
 		const target = ev.currentTarget;
@@ -58,6 +61,9 @@
 
 		el.style.setProperty('--rot-x', `${rX}deg`);
 		el.style.setProperty('--rot-y', `${rY}deg`);
+
+		showIcon = true;
+
 	};
 
 	onMount(() => {
@@ -76,6 +82,9 @@
 		' '
 	)}`}
 	style:bgColor={'red'}
+	on:mouseleave={() => {
+		showIcon = false;
+	}}
 
 	on:click={() => {
 		if (url) {
@@ -88,8 +97,11 @@
 		}	
 	}}
 >
-	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px">
+	<div class="card-bg-img flex-1 flex flex-col p-25px rounded-15px relative">
 		<slot />
+		{#if file && showIcon}
+			<UIcon icon="i-carbon-download" classes="absolute right-15px text-1.5em" />
+		{/if}
 	</div>
 </svelte:element>
 

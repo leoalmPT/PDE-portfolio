@@ -37,7 +37,7 @@
 								classes={['cursor-pointer decoration-none']}
 								tiltDegree={1}
 								href={`${base}/resources/${skill.slug}`}
-								bgImg={getAssetURL(skill.logo)}
+								bgImg={skill.logo ? getAssetURL(skill.logo) : ''}
 								color={skill.color}
 								url={skill.url}
 								file={skill.file}

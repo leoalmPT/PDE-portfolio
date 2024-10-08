@@ -7,25 +7,24 @@
 	import 'prismjs/components/prism-typescript';
 	import 'prismjs/themes/prism-tomorrow.css';
 	import { onMount } from 'svelte';
-
+	
 	let container: HTMLDivElement;
-
+	
 	export let content: string;
-
+  
 	onMount(() => {
-		marked.use(gfmHeadingId());
-		marked.use(mangle());
-
-		const sanitizer = createSanitizer(window);
-
-		if (window) {
-			const parsed = marked.parse(content);
-
-			container.innerHTML = sanitizer.sanitize(parsed);
-
-			Prism.highlightAllUnder(container);
-		}
+	  marked.use(gfmHeadingId());
+	  marked.use(mangle());
+  
+	  const sanitizer = createSanitizer(window);
+  
+	  if (window) {
+		const parsed = marked.parse(content);
+		container.innerHTML = sanitizer.sanitize(parsed);
+		Prism.highlightAllUnder(container);
+	  }
 	});
-</script>
-
-<div bind:this={container} class="markdown-container" />
+  </script>
+  
+  <div bind:this={container} class="text-[var(--accent-text) font-300 text-1.2em" />
+  

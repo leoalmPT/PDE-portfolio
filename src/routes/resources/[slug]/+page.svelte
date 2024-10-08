@@ -36,30 +36,6 @@
 			return [];
 		}
 
-		projects.items.forEach((item) => {
-			if (item.skills.some((tech) => tech.slug === skill.slug)) {
-				out.push({
-					img: getAssetURL(item.logo),
-					display: `${item.name} (${item.type})`,
-					name: item.name,
-					type: 'projects',
-					url: `/projects/${item.slug}`
-				});
-			}
-		});
-
-		experiences.items.forEach((item) => {
-			if (item.skills.some((tech) => tech.slug === skill.slug)) {
-				out.push({
-					img: getAssetURL(item.logo),
-					display: `${item.name} @ ${item.company}`,
-					name: item.name,
-					type: 'experience',
-					url: `/activities/${item.slug}`
-				});
-			}
-		});
-
 		return out;
 	};
 
@@ -78,7 +54,7 @@
 		</div>
 	{:else}
 		<div class="flex flex-col items-center overflow-x-hidden">
-			<Banner img={getAssetURL(data.skill.logo)}>
+			<Banner img={data.skill.logo ? getAssetURL(data.skill.logo) : ''}>
 				<MainTitle>{data.skill.name}</MainTitle>
 			</Banner>
 			<div class="pt-3 pb-1 overflow-x-hidden w-full">
