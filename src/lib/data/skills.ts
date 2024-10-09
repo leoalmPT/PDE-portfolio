@@ -32,7 +32,7 @@ export const items = [
 		logo: Assets.Overleaf,
 		name: 'Dissertation',
 		category: 'links',
-		url: 'https://www.overleaf.com/read/crmfmddxxtnk#9ae0d5',
+		url: 'https://overleaf.com/read/crmfmddxxtnk#9ae0d5',
 	}),
 	defineSkill({
 		slug: 'portfolio',
