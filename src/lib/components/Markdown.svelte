@@ -26,5 +26,5 @@
 	});
   </script>
   
-  <div bind:this={container} class="text-[var(--accent-text) font-300 text-1.2em" />
+  <div bind:this={container} class="text-[var(--text)] text-1.2em" />
   

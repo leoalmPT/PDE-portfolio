@@ -3,6 +3,34 @@ import melecon from '../md/melecon.md?raw';
 
 export const items: Array<Experience> = [
 	{
+		slug: 'hackathon',
+		name: 'Hackathon - Aveiro TechWeek 2024',
+		shortDescription: 'Winning team of the Aveiro TechWeek 2024 Hackathon - Altice Labs Challenge',
+		date: new Date('2024-10-04'),
+		description: '',
+		color: 'cyan',
+		screenshots: [
+			{ src: '/images/hackathon0.jpg', label: 'Overview' },
+			{ src: '/images/hackathon1.jpg', label: 'Prize' },
+		],
+	},
+	{
+		slug: 'globecom',
+		name: 'GLOBECOM 2024',
+		shortDescription: 'The paper "From Black Box to Transparency: Consistency and Cost within XAI" was accepted for presentation',
+		date: new Date('2024-09-16'),
+		description: '',
+		color: 'yellow',
+	},
+	{
+		slug: 'research',
+		name: 'Research Grant',
+		shortDescription: 'Research Grant at the University of Aveiro',
+		date: new Date('2024-09-01'),
+		description: '',
+		color: 'green',
+	},
+	{
 		slug: 'melecon',
 		name: 'IEEE Melecon 2024',
 		shortDescription: 'Presentation of the paper "Privacy-Preserving Defense: Intrusion Detection in IoT using Federated Learning"',

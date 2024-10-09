@@ -7,7 +7,7 @@ const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCat
 
 const categories = [
 	defineSkillCategory({ name: 'Links', slug: 'links' }),
-	defineSkillCategory({ name: 'Presentations', slug: 'presentations' }),
+	defineSkillCategory({ name: 'Files', slug: 'files' }),
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -33,7 +33,7 @@ export const items = [
 		name: 'Dissertation',
 		category: 'links',
 		// url: 'https://www.google.com',
-		// file: '/logos/adonis.png',
+		// url: '/files/IT-report-9_24 - Sheet1.pdf',
 	}),
 	defineSkill({
 		slug: 'portfolio',
@@ -53,7 +53,15 @@ export const items = [
 		category: 'links',
 		url: 'https://github.com/leoalmPT/FL_Benchmark',
 	}),
-
+	defineSkill({
+		slug: 'proposal',
+		color: 'red',
+		description: '',
+		logo: Assets.PDF,
+		name: 'Proposal',
+		category: 'files',
+		url: '/files/proposal.pdf',
+	}),
 ] as const;
 
 export const title = 'Resources';

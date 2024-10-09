@@ -62,11 +62,11 @@
 						<Markdown
 							content={data.experience.description ?? 'This place is yet to be filled...'}
 						/>
-					{:else}
+					<!-- {:else}
 						<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 							<UIcon icon="i-carbon-text-font" classes="text-3.5em" />
 							<p class="font-300">No description...</p>
-						</div>
+						</div> -->
 					{/if}
 				</div>
 			</div>
@@ -74,7 +74,7 @@
 
 		{#if screenshots.length > 0}
 			<div
-				class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-5 "
+				class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 my-5 "
 			>
 				{#each screenshots as item, index}
 					<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -94,11 +94,11 @@
 					</div>
 				{/each}
 			</div>
-		{:else}
+		<!-- {:else}
 			<div class="p-5 col-center gap-3 m-y-auto text-[var(--border)]">
 				<UIcon icon="i-carbon-image" classes="text-3.5em" />
 				<p class="font-300">No images</p>
-			</div>
+			</div> -->
 		{/if}
 	{/if}
 </div>

@@ -8,7 +8,8 @@ const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
 
 const Assets = {
-	Github: a('github.svg'),
+	PDF: a('pdf.png'),
+	Github: a('github.png'),
 	Overleaf: a('overleaf.png'),
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),
