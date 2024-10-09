@@ -42,7 +42,7 @@ export const items = [
 		logo: Assets.Github,
 		name: 'Portfolio',
 		category: 'links',
-		url: 'https://github.com/leoalmPT/portfolio',
+		url: 'https://github.com/leoalmPT/PDE-portfolio',
 	}),
 	defineSkill({
 		slug: 'fl',
