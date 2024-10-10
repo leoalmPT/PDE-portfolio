@@ -3,6 +3,7 @@ import melecon from '../md/melecon.md?raw';
 import bolsa from '../md/bolsa.md?raw';
 import globecom from '../md/globecom.md?raw';
 import hackathon from '../md/hackathon.md?raw';
+import peci from '../md/peci.md?raw';
 
 export const items: Array<Experience> = [
 	{
@@ -16,6 +17,14 @@ export const items: Array<Experience> = [
 			{ src: '/images/hackathon0.jpg', label: 'Overview' },
 			{ src: '/images/hackathon1.jpg', label: 'Prize' },
 		],
+	},
+	{
+		slug: 'peci',
+		name: 'Project supervision',
+		shortDescription: 'Helping supervising of a final project for the LECI Bachelor\'s degree as part of the PECI subject',
+		date: new Date('2024-09-27'),
+		description: peci,
+		color: 'violet',
 	},
 	{
 		slug: 'globecom',
