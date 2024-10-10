@@ -1,5 +1,8 @@
 import { type Experience } from '../types';
 import melecon from '../md/melecon.md?raw';
+import bolsa from '../md/bolsa.md?raw';
+import globecom from '../md/globecom.md?raw';
+import hackathon from '../md/hackathon.md?raw';
 
 export const items: Array<Experience> = [
 	{
@@ -7,7 +10,7 @@ export const items: Array<Experience> = [
 		name: 'Hackathon - Aveiro TechWeek 2024',
 		shortDescription: 'Winning team of the Aveiro TechWeek 2024 Hackathon - Altice Labs Challenge',
 		date: new Date('2024-10-04'),
-		description: '',
+		description: hackathon,
 		color: 'cyan',
 		screenshots: [
 			{ src: '/images/hackathon0.jpg', label: 'Overview' },
@@ -19,7 +22,7 @@ export const items: Array<Experience> = [
 		name: 'GLOBECOM 2024',
 		shortDescription: 'The paper "From Black Box to Transparency: Consistency and Cost within XAI" was accepted for presentation',
 		date: new Date('2024-09-16'),
-		description: '',
+		description: globecom,
 		color: 'yellow',
 	},
 	{
@@ -27,7 +30,7 @@ export const items: Array<Experience> = [
 		name: 'Research Grant',
 		shortDescription: 'Research Grant at the University of Aveiro',
 		date: new Date('2024-09-01'),
-		description: '',
+		description: bolsa,
 		color: 'green',
 	},
 	{
