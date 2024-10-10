@@ -10,7 +10,7 @@ The project begins with an analysis of the existing Federated Learning platform 
 
 <br>
 
-The base code for the project is an adaptation of the that I developed for my master's thesis.
+The base code for the project is an adaptation of the code that I developed for my master's thesis.
 
 <br>
 
