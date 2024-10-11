@@ -4,8 +4,17 @@ import bolsa from '../md/bolsa.md?raw';
 import globecom from '../md/globecom.md?raw';
 import hackathon from '../md/hackathon.md?raw';
 import peci from '../md/peci.md?raw';
+import dcc from '../md/dcc.md?raw';
 
 export const items: Array<Experience> = [
+	{
+		slug: 'dcc',
+		name: 'DCC 2024',
+		shortDescription: 'The paper "AIDetx: a compression-based method for identification of machine-learning generated text" was submitted for the conference',
+		date: new Date('2024-10-11'),
+		description: dcc,
+		color: 'crimson',
+	},
 	{
 		slug: 'hackathon',
 		name: 'Hackathon - Aveiro TechWeek 2024',

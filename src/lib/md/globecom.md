@@ -1,4 +1,4 @@
-I contributed to the paper "From Black Box to Transparency: Consistency and Cost within XAI" which was been accepted for presentation at GLOBECOM 2024. This paper was developed at Instituto de Telecomunicações and the main author is my colleague, Julio Corona.
+I contributed to the paper "From Black Box to Transparency: Consistency and Cost within XAI" which was been accepted for presentation at GLOBECOM 2024. This paper was made at Instituto de Telecomunicações and the main author is my colleague, Julio Corona.
 
 <br>
 
@@ -6,4 +6,4 @@ This paper explores the role of Explainable AI (XAI) in enhancing the transparen
 
 <br>
 
-In this collaborative effort, I contributed to the analysis of different XAI techniques, focusing on the consistency of feature importance across various methods,
+In this collaborative effort, I contributed to the analysis of different XAI techniques, focusing on the consistency of feature importance across various methods.
