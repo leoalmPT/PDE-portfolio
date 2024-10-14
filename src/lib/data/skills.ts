@@ -60,6 +60,15 @@ export const items = [
 		category: 'files',
 		url: '/files/proposal.pdf',
 	}),
+	defineSkill({
+		slug: 'sprint1',
+		color: 'violet',
+		description: '',
+		logo: Assets.PDF,
+		name: 'Sprint 1',
+		category: 'files',
+		url: '/files/sprint1.pdf',
+	}),
 ] as const;
 
 export const title = 'Resources';
