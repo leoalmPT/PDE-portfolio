@@ -25,15 +25,6 @@ const defineSkill = <S extends string>(
 
 export const items = [
 	defineSkill({
-		slug: 'dissertation',
-		color: 'green',
-		description: '',
-		logo: Assets.Overleaf,
-		name: 'Dissertation',
-		category: 'links',
-		url: 'https://overleaf.com/read/crmfmddxxtnk#9ae0d5',
-	}),
-	defineSkill({
 		slug: 'portfolio',
 		color: 'yellow',
 		description: '',
@@ -68,6 +59,33 @@ export const items = [
 		name: 'Sprint 1',
 		category: 'files',
 		url: '/files/sprint1.pdf',
+	}),
+	defineSkill({
+		slug: 'sprint2',
+		color: 'salmon',
+		description: '',
+		logo: Assets.PDF,
+		name: 'Sprint 2',
+		category: 'files',
+		url: '/files/sprint2.pdf',
+	}),
+	defineSkill({
+		slug: 'sprint3',
+		color: 'orangered',
+		description: '',
+		logo: Assets.PDF,
+		name: 'Sprint 3',
+		category: 'files',
+		url: '/files/sprint3.pdf',
+	}),
+	defineSkill({
+		slug: 'sprint4',
+		color: 'rosybrown',
+		description: '',
+		logo: Assets.PDF,
+		name: 'Sprint 4',
+		category: 'files',
+		url: '/files/sprint4.pdf',
 	}),
 ] as const;
 

@@ -5,8 +5,17 @@ import globecom from '../md/globecom.md?raw';
 import hackathon from '../md/hackathon.md?raw';
 import peci from '../md/peci.md?raw';
 import dcc from '../md/dcc.md?raw';
+import pkdd from '../md/pkdd.md?raw';
 
 export const items: Array<Experience> = [
+	{
+		slug: 'pkdd',
+		name: 'PKDD 2024',
+		shortDescription: 'The paper "Understanding What Federated Learning Models Learn: A Comparative Study with Traditional Models" was submitted.',
+		date: new Date('2024-12-13'),
+		description: pkdd,
+		color: 'salmon',
+	},
 	{
 		slug: 'dcc',
 		name: 'DCC 2024',
